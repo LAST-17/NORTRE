@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  PUBLIC: "www.nortre.pl"         
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>NORTRE - Drewno Skandynawskie</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&amp;subset=latin-ext">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1>NORTRE</h1>
+			</div>
+		</header>
+		<nav class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#o-nas">O nas</a></li>
+					<li><a href="#oferta">Oferta</a></li>
+					<li><a href="#galeria">Galeria</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="section" id="o-nas">
+			<div class="container">
+				<h2>O nas</h2>
+				<p>Oferujemy Państwu wysokiej klasy drewno konstrukcyjne sprowadzone ze Skandynawii, z wysoce wyspecjalizowanych tartaków skandynawskich.</p>
+				<p>Drewno jest wraz z certyfikatem C24, co oznacza bardzo wysoką jakość.</p>
+			</div>
+		</section>
+		<section class="section" id="oferta">
+			<div class="container">
+				<h2>Oferta</h2>
+				<p>Tak jak powiedzieliśmy wyżej, nasze drewno posiada certyfikat, a na każdej naszej desce/belce jest stempel.</p>
+				<p>Skandynawskie drewno jest bardzo twarde i wytrzymałe przez panujący tam klimat.</p>
+				<p>Drewno konstrukcyjne przeznaczone jest do budowy domów szkieletowych, konstrukcji szkieletowych, altan, wiat, ogrodzeń, legarów oraz wielu, wielu innych celów.</p>
+				<p> </p>
+				<p>Oto nasza oferta: </p>
+				<p>Deska 20x120 mm (elewacja)</p>
+				<p>Deska 28x120mm (taras)</p>
+				<p>Deska 28x120 mm (taras impr.)</p>
+				<p>Deska 45x70 mm (impr.)</p>
+				<p>Deska 45x95 mm (impr.)</p>
+				<p>Deska 45x45 mm</p>
+				<p>Deska 45x70 mm</p>
+				<p>Deska 45x95 mm</p>
+				<p>Deska 45x145 mm</p>
+				<p>Deska 45x195 mm</p>
+				<p>Deska 20x120 mm</p>
+			</div>
+		</section>
+		<section class="section" id="galeria">
+			<div class="container">
+				<h2>Galeria</h2>
+				<p> <img src="galeria\zdj4.png" style="border: 0" width="320" height="200" alt=""> <img src="galeria\zdj3.png" style="border: 0" width="320" height="200" alt=""> </p>
+        <p> <img src="galeria\zdj5.png" style="border: 0" width="320" height="200" alt=""> <img src="galeria\zdj6.JPG" style="border: 0" width="320" height="200" alt=""> </p>
+        <p> <img src="galeria\zdj8.jpg" style="border: 0" width="320" height="200" alt=""> <img src="galeria\zdj7.JPG" style="border: 0" width="320" height="200" alt=""> </p>
+        <p> <img src="galeria\zdj9.jpg" style="border: 0" width="320" height="200" alt=""> <img src="galeria\zdj10.JPG" style="border: 0" width="320" height="200" alt=""> </p>
+        <p> <img src="galeria\zdj11.jpg" style="border: 0" width="320" height="200" alt=""> <img src="galeria\zdj12.JPG" style="border: 0" width="320" height="200" alt=""> </p>
+			</div>
+		</section>
+		<section class="section" id="kontakt">
+			<div class="container">
+				<h2>Kontakt</h2>
+				<p>Telefon: (+48) 502 114 318</p>
+				<p>E-mail: pburlik@op.pl</p>
+				<p>Adres: 22-151, Staw. </p>
+				<p>Godziny otwarcia:</p>
+				<p>Poniedziałek - Piątek:   9:00 do 20:00</p>
+				<p>Sobota:   10:00 do 18:00</p>
+				<p>Niedziela:   Nieczynne</p>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<p>&copy;All rights reserved, 2018.                                                              Created By LAST#17.</p>
+			</div>
+		</footer>
+		<script src="jquery.js"></script>
+		<script src="stickyfill.js"></script>
+		<script>
+			$('.nav').Stickyfill();
+
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>
